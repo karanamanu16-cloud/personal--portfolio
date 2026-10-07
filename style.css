@@ -1,0 +1,310 @@
+/* =========================
+   GENERAL
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f5f9fc;
+}
+
+
+/* =========================
+   NAVIGATION
+========================= */
+
+nav {
+    background-color: #222;
+    color: white;
+
+    padding: 20px 50px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    position: sticky;
+    top: 0;
+
+    z-index: 1000;
+}
+
+nav h2 {
+    font-size: 28px;
+}
+
+nav ul {
+    list-style: none;
+
+    display: flex;
+    gap: 25px;
+}
+
+nav ul li a {
+    color: white;
+
+    text-decoration: none;
+
+    font-size: 17px;
+}
+
+nav ul li a:hover {
+    color: #20a9d0;
+}
+
+
+/* =========================
+   SECTIONS
+========================= */
+
+section {
+    padding: 70px 10%;
+    text-align: center;
+}
+
+
+/* =========================
+   HOME
+========================= */
+
+#home {
+    min-height: 90vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 70px;
+
+    background-color: white;
+}
+
+.home-content {
+    max-width: 550px;
+}
+
+#home h1 {
+    font-size: 42px;
+    margin-bottom: 15px;
+}
+
+#home h2 {
+    color: #168aaa;
+    margin-bottom: 20px;
+}
+
+#home p {
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+
+/* =========================
+   BUTTON
+========================= */
+
+.button {
+    display: inline-block;
+
+    background-color: #20a9d0;
+    color: white;
+
+    padding: 12px 25px;
+
+    border-radius: 5px;
+
+    text-decoration: none;
+
+    font-size: 17px;
+}
+
+.button:hover {
+    background-color: #168aaa;
+}
+
+
+/* =========================
+   PROFILE PHOTO
+========================= */
+
+.profile-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-photo {
+    width: 230px;
+    height: 230px;
+
+    border-radius: 50%;
+
+    object-fit: cover;
+
+    /* Crop the photo around the face */
+    object-position: center 25%;
+
+    border: 6px solid #20a9d0;
+}
+
+
+/* =========================
+   ABOUT
+========================= */
+
+#about {
+    background-color: #eaf8fc;
+}
+
+#about h2,
+#skills h2,
+#projects h2,
+#contact h2 {
+    font-size: 32px;
+    margin-bottom: 25px;
+}
+
+#about p {
+    max-width: 750px;
+
+    margin: auto;
+
+    font-size: 18px;
+}
+
+
+/* =========================
+   SKILLS
+========================= */
+
+.skills-container {
+    display: flex;
+
+    justify-content: center;
+
+    gap: 25px;
+
+    flex-wrap: wrap;
+}
+
+.skills-container div {
+    background-color: #20a9d0;
+
+    color: white;
+
+    padding: 15px 30px;
+
+    border-radius: 8px;
+
+    font-weight: bold;
+}
+
+
+/* =========================
+   PROJECTS
+========================= */
+
+#projects {
+    background-color: #eaf8fc;
+}
+
+.project-card {
+    background-color: white;
+
+    max-width: 700px;
+
+    margin: 20px auto;
+
+    padding: 25px;
+
+    border-radius: 10px;
+
+    box-shadow:
+        0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.project-card h3 {
+    margin-bottom: 10px;
+
+    color: #168aaa;
+}
+
+
+/* =========================
+   CONTACT
+========================= */
+
+#contact {
+    background-color: white;
+}
+
+#contact p {
+    margin: 10px 0;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    background-color: #222;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 20px;
+}
+
+
+/* =========================
+   MOBILE RESPONSIVE
+========================= */
+
+@media (max-width: 768px) {
+
+    nav {
+        flex-direction: column;
+
+        gap: 15px;
+
+        padding: 20px;
+    }
+
+    nav ul {
+        gap: 15px;
+
+        flex-wrap: wrap;
+
+        justify-content: center;
+    }
+
+    #home {
+        flex-direction: column;
+
+        gap: 30px;
+
+        padding-top: 60px;
+    }
+
+    #home h1 {
+        font-size: 32px;
+    }
+
+    .profile-photo {
+        width: 200px;
+        height: 200px;
+    }
+}
